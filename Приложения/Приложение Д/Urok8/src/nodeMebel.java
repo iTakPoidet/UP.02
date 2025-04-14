@@ -1,9 +1,10 @@
 public class nodeMebel {
-    private mebel odj;
+    private mebel mebel_list;
     private nodeMebel next = null;
-    public nodeMebel(mebel odj) {
-        this.odj = odj;
+    public nodeMebel(mebel mebel_list) {
+        this.mebel_list = mebel_list;
     }
+    public nodeMebel(){}
 
     public nodeMebel getNext() {
         return next;
@@ -14,9 +15,14 @@ public class nodeMebel {
     }
 
     public mebel getMebel() {
-        return odj;
+        return mebel_list;
     }
+
+    public void setMebel(mebel mebel_list) {
+        this.mebel_list = mebel_list;
+    }
+
     public String toString(){
-        return odj.toString();
+        return mebel_list.toString();
     }
 }

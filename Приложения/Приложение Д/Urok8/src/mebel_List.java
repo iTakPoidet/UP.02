@@ -2,7 +2,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class mebel_List implements Applicable {
-    private nodeMebel begin;
+    protected nodeMebel begin;
 
     public mebel_List(int n) {
         System.out.println("Ввод 1-ой записи: ");

@@ -8,13 +8,28 @@ public class Main {
             System.out.print("Введи размерноость: ");
             n = sc.nextInt();
         }while (!Library.proverka(n));
-        mebel_List list = new mebel_List(n);
+        AdvancedList list = new AdvancedList(n);
         System.out.println("Исходный список: ");
         System.out.println(list.toString());
-        System.out.print("Введи год для выбора: ");
+        /*System.out.print("Введи год для выбора: ");
         sc = new Scanner(System.in);
         String  data = sc.nextLine();
         System.out.println("Результат выбора: ");
-        System.out.println(list.result_filtr(data));
+        System.out.println(list.result_filtr(data));*/
+        /* System.out.print("Введи назввание мебели: ");
+        sc = new Scanner(System.in);
+        String prov = sc.nextLine();
+        list.addNodeTag(n, prov);
+        System.out.println("Исходный список: ");
+        System.out.println(list.toString());
+        list.addNodeEnd();
+        System.out.println("Исходный список: ");
+        System.out.println(list.toString());*/
+        System.out.println("Введи год мебели");
+        sc = new Scanner(System.in);
+        String data = sc.nextLine();
+        list.removeNodeTag(data);
+        System.out.println("Исходный список: ");
+        System.out.println(list.toString());
     }
 }
